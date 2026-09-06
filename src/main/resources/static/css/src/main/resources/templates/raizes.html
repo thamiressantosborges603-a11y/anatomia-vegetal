@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raízes - Anatomia Vegetal</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<header class="cabecalho">
+    <div class="container">
+        <h1>🌱 Anatomia Vegetal</h1>
+
+        <nav>
+            <a th:href="@{/}">Início</a>
+            <a th:href="@{/raizes}">Raízes</a>
+            <a th:href="@{/caules}">Caules</a>
+            <a th:href="@{/folhas}">Folhas</a>
+            <a th:href="@{/aluno}">Área do Aluno</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <section>
+        <h2>🌱 Raízes</h2>
+
+        <p>
+            As raízes são órgãos vegetais que geralmente se desenvolvem no solo.
+        </p>
+
+        <p>
+            Elas são importantes para a fixação da planta e para a absorção de água e sais minerais.
+        </p>
+
+        <h3>Principais funções das raízes</h3>
+
+        <ul>
+            <li>Fixar a planta ao solo.</li>
+            <li>Absorver água.</li>
+            <li>Absorver sais minerais.</li>
+            <li>Armazenar substâncias em algumas espécies.</li>
+        </ul>
+
+        <h3>Tipos de raízes</h3>
+
+        <p>
+            Existem diferentes tipos de raízes, como pivotantes, fasciculadas e adventícias.
+        </p>
+
+        <a class="botao" th:href="@{/caules}">
+            Próximo: Caules →
+        </a>
+    </section>
+
+</main>
+
+<footer class="rodape">
+    <div class="container">
+        <p>🌱 Projeto escolar — Anatomia Vegetal</p>
+    </div>
+</footer>
+
+</body>
+</html>
