@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz - Anatomia Vegetal</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/style.css}">
+
+</head>
+
+
+<body>
+
+
+<header class="cabecalho">
+
+    <div class="container">
+
+        <h1>📝 Quiz - Anatomia Vegetal</h1>
+
+        <nav>
+
+            <a th:href="@{/}">
+                Início
+            </a>
+
+            <a th:href="@{/raizes}">
+                Raízes
+            </a>
+
+            <a th:href="@{/caules}">
+                Caules
+            </a>
+
+            <a th:href="@{/folhas}">
+                Folhas
+            </a>
+
+            <a th:href="@{/logout}">
+                Sair
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+<section>
+
+<h2>Teste seus conhecimentos</h2>
+
+<p>
+    Responda às 10 questões.
+</p>
+
+
+<form th:action="@{/quiz}"
+      method="post">
+
+
+<div class="questao">
+
+<h3>
+1. Qual é uma das principais funções das raízes?
+</h3>
+
+<label>
+<input type="radio"
+       name="q1"
+       value="a"
+       required>
+Produzir flores
+</label>
+
+<label>
+<input type="radio"
+       name="q1"
+       value="b">
+Absorver água e sais minerais
+</label>
+
+<label>
+<input type="radio"
+       name="q1"
+       value="c">
+Produzir frutos
+</label>
+
+<label>
+<input type="radio"
+       name="q1"
+       value="d">
+Produzir sementes
+</label>
+
+</div>
+
+
+<div class="questao">
+
+<h3>
+2. Qual estrutura geralmente sustenta folhas, flores e frutos?
+</h3>
+
+<label>
+<input type="radio"
+       name="q2"
+       value="a"
+       required>
+Caule
+</label>
+
+<label>
+<input type="radio"
+       name="q2"
+       value="b">
+Raiz
+</label>
+
+<label>
+<input type="radio"
+       name="q2"
+       value="c">
+Semente
+</label>
+
+<label>
+<input type="radio"
+       name="q2"
+       value="d">
+Pólen
+</label>
+
+</div>
+
+
+<div class="questao">
+
+<h3>
+3. Qual processo ocorre principalmente nas folhas?
+</h3>
+
+<label>
+<input type="radio"
+       name="q3"
+       value="a"
+       required>
+Fotossíntese
+</label>
+
+<label>
+<input type="radio"
+       name="q3"
+       value="b">
+Germinação
+</label>
+
+<label>
+<input type="radio"
+       name="q3"
+       value="c">
+Fixação ao solo
+</label>
+
+<label>
+<input type="radio"
+       name="q3"
+       value="d">
+Produção de raízes
+</label>
+
+</div>
+
+
+<div class="questao">
+
+<h3>
+4. Qual destes é um tipo de raiz?
+</h3>
+
+<label>
+<input type="radio"
+       name="q4"
+       value="a"
+       required>
+Pivotante
+</label>
+
+<label>
+<input type="radio"
+       name="q4"
+       value="b">
+Limbo
+</label>
+
+<label>
+<input type="radio"
+       name="q4"
+       value="c">
+Pecíolo
+</label>
+
+<label>
+<input type="radio"
+       name="q4"
+       value="d">
+Nervura
+</label>
+
+</div>
+
+
+<div class="questao">
+
+<h3>
+5. Qual destes pode ser um caule subterrâneo?
+</h3>
+
+<label>
+<input type="radio"
+       name="q5"
+       value="a"
+       required>
+Rizoma
+</label>
+
+<label>
+<input type="radio"
+       name="q5"
+       value="b">
+Limbo
+</label>
+
+<label>
+<input type="radio"
+       name="q5"
+       value="c">
+Nervura
+</label>
+
+<label>
+<input type="radio"
+       name="q5"
+       value="d">
+Pecíolo
+</label>
+
+</div>
+
+
+<div class="questao">
+
+<h3>
+6. Qual é a parte mais ampla da folha?
+</h3>
+
+<label>
+<input type="radio"
+       name="q6"
+       value="a"
+       required>
+Limbo
+</label>
+
+<label>
+<input type="radio"
+       name="q6"
+       value="b">
+Raiz
+</label>
+
+<label>
+<input type="radio"
+       name="q6"
+       value="c">
+Caule
+</label>
+
+<label>
+<input type="radio"
+       name="q6"
+       value="d">
+Semente
+</label>
+
+</div>
+
+
+<div class="questao">
+
+<h3>
+7. Além da sustentação, o caule participa de:
+</h3>
+
+<label>
+<input type="radio"
+       name="q7"
+       value="a"
+       required>
+Transporte de substâncias
+</label>
+
+<label>
+<input type="radio"
+       name="q7"
+       value="b">
+Formação do solo
+</label>
+
+<label>
+<input type="radio"
+       name="q7"
+       value="c">
+Produção de rochas
+</label>
+
+<label>
+<input type="radio"
+       name="q7"
+       value="d">
+Fixação exclusiva da planta
+</label>
+
+</div>
+
+
+<div class="questao">
+
+<h3>
+8. As folhas também participam de:
+</h3>
+
+<label>
+<input type="radio"
+       name="q8"
+       value="a"
+       required>
+Trocas gasosas
+</label>
+
+<label>
+<input type="radio"
+       name="q8"
+       value="b">
+Formação do solo
+</label>
+
+<label>
+<input type="radio"
+       name="q8"
+       value="c">
+Produção de rochas
+</label>
+
+<label>
+<input type="radio"
+       name="q8"
+       value="d">
+Fixação da raiz
+</label>
+
+</div>
+
+
+<div class="questao">
+
+<h3>
+9. Algumas raízes podem armazenar:
+</h3>
+
+<label>
+<input type="radio"
+       name="q9"
+       value="a"
+       required>
+Substâncias nutritivas
+</label>
+
+<label>
+<input type="radio"
+       name="q9"
+       value="b">
+Rochas
+</label>
+
+<label>
+<input type="radio"
+       name="q9"
+       value="c">
+Luz solar
+</label>
+
+<label>
+<input type="radio"
+       name="q9"
+       value="d">
+Vidro
+</label>
+
+</div>
+
+
+<div class="questao">
+
+<h3>
+10. Quais são os três órgãos estudados no projeto?
+</h3>
+
+<label>
+<input type="radio"
+       name="q10"
+       value="a"
+       required>
+Raiz, caule e folha
+</label>
+
+<label>
+<input type="radio"
+       name="q10"
+       value="b">
+Flor, fruto e semente
+</label>
+
+<label>
+<input type="radio"
+       name="q10"
+       value="c">
+Flor, pólen e fruto
+</label>
+
+<label>
+<input type="radio"
+       name="q10"
+       value="d">
+Semente, fruto e pólen
+</label>
+
+</div>
+
+
+<button class="botao"
+        type="submit">
+
+    Finalizar Quiz
+
+</button>
+
+
+</form>
+
+</section>
+
+</main>
+
+
+<footer class="rodape">
+
+<div class="container">
+
+<p>
+🌱 Projeto escolar — Anatomia Vegetal
+</p>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
