@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Folhas - Anatomia Vegetal</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/style.css}">
+
+</head>
+
+
+<body>
+
+
+<header class="cabecalho">
+
+    <div class="container">
+
+        <h1>🍃 Anatomia Vegetal</h1>
+
+        <nav>
+
+            <a th:href="@{/}">
+                Início
+            </a>
+
+            <a th:href="@{/raizes}">
+                Raízes
+            </a>
+
+            <a th:href="@{/caules}">
+                Caules
+            </a>
+
+            <a th:href="@{/folhas}">
+                Folhas
+            </a>
+
+            <a th:href="@{/aluno}">
+                Área do Aluno
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <section>
+
+        <h2>🍃 Folhas</h2>
+
+        <p>
+            As folhas são estruturas importantes
+            das plantas e participam principalmente
+            da fotossíntese.
+        </p>
+
+
+        <h3>Principais funções</h3>
+
+        <ul>
+
+            <li>
+                Realizar a fotossíntese.
+            </li>
+
+            <li>
+                Participar das trocas gasosas.
+            </li>
+
+            <li>
+                Auxiliar na transpiração.
+            </li>
+
+            <li>
+                Produzir substâncias importantes
+                para a planta.
+            </li>
+
+        </ul>
+
+
+        <h3>Partes da folha</h3>
+
+        <p>
+            Uma folha pode apresentar
+            limbo, pecíolo e nervuras.
+        </p>
+
+        <p>
+            O formato e o tamanho das folhas
+            variam entre as espécies.
+        </p>
+
+
+        <a class="botao"
+           th:href="@{/aluno}">
+
+            Ir para a Área do Aluno →
+
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer class="rodape">
+
+    <div class="container">
+
+        <p>
+            🌱 Projeto escolar — Anatomia Vegetal
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
