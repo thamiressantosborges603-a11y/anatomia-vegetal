@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Anatomia Vegetal</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<header class="cabecalho">
+
+    <div class="container">
+
+        <h1>🌱 Anatomia Vegetal</h1>
+
+        <nav>
+            <a th:href="@{/}">Início</a>
+            <a th:href="@{/raizes}">Raízes</a>
+            <a th:href="@{/caules}">Caules</a>
+            <a th:href="@{/folhas}">Folhas</a>
+            <a th:href="@{/aluno}">Área do Aluno</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h2>Conheça a anatomia das plantas</h2>
+
+            <p>
+                Aprenda sobre raízes, caules e folhas
+                de forma simples e organizada.
+            </p>
+
+            <a class="botao"
+               th:href="@{/raizes}">
+                Começar a estudar
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="container">
+
+        <h2>Partes da planta</h2>
+
+        <div class="cards">
+
+            <article class="card">
+
+                <h3>🌱 Raízes</h3>
+
+                <p>
+                    As raízes ajudam na fixação da planta
+                    e na absorção de água e sais minerais.
+                </p>
+
+                <a th:href="@{/raizes}">
+                    Aprender sobre raízes →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>🌿 Caules</h3>
+
+                <p>
+                    Os caules sustentam a planta
+                    e transportam substâncias.
+                </p>
+
+                <a th:href="@{/caules}">
+                    Aprender sobre caules →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>🍃 Folhas</h3>
+
+                <p>
+                    As folhas participam principalmente
+                    da fotossíntese e das trocas gasosas.
+                </p>
+
+                <a th:href="@{/folhas}">
+                    Aprender sobre folhas →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="container">
+
+        <h2>Teste seus conhecimentos</h2>
+
+        <p>
+            Entre na área do aluno e responda
+            ao quiz de Anatomia Vegetal.
+        </p>
+
+        <a class="botao"
+           th:href="@{/aluno}">
+            Acessar Área do Aluno
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer class="rodape">
+
+    <div class="container">
+
+        <p>
+            🌱 Projeto escolar — Anatomia Vegetal
+        </p>
+
+        <p>
+            Java + Spring Boot + Thymeleaf
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
