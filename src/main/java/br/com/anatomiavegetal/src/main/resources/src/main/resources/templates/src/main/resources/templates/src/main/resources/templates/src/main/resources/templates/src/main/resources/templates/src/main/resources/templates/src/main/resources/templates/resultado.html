@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Resultado</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/style.css}">
+
+</head>
+
+
+<body>
+
+
+<header class="cabecalho">
+
+    <div class="container">
+
+        <h1>🌱 Anatomia Vegetal</h1>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+<section class="resultado">
+
+    <h2>
+        Quiz concluído! 🎉
+    </h2>
+
+
+    <div class="nota">
+
+        <span th:text="${pontos}">
+            0
+        </span>
+
+        /10
+
+    </div>
+
+
+    <p th:if="${pontos >= 7}">
+
+        Muito bem!
+        Você demonstrou um bom conhecimento
+        sobre Anatomia Vegetal. 🌿
+
+    </p>
+
+
+    <p th:if="${pontos < 7}">
+
+        Bom trabalho!
+        Revise os conteúdos
+        e tente novamente. 🌱
+
+    </p>
+
+
+    <div class="botoes">
+
+        <a class="botao"
+           th:href="@{/quiz}">
+
+            Tentar novamente
+
+        </a>
+
+
+        <a class="botao secundario"
+           th:href="@{/}">
+
+            Voltar ao início
+
+        </a>
+
+
+        <a class="botao sair"
+           th:href="@{/logout}">
+
+            Sair da conta
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer class="rodape">
+
+    <div class="container">
+
+        <p>
+            🌱 Projeto escolar — Anatomia Vegetal
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
